@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const UserRoutes = require('./routes/user');
 const TaskRoutes = require('./routes/task');
 
-
+app.use(express.static('public'))
 app.use(express.json());
 app.use(cors())
 
