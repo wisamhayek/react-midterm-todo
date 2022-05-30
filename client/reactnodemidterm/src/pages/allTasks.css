@@ -1,0 +1,30 @@
+input.changeInput {
+    background-color: transparent;
+    border: 0;
+    padding: 8px;
+    font-size: large;
+    color: royalblue;
+    margin-bottom: 1rem;
+}
+
+input.changeInput:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+textarea.changeInput {
+    resize: none;
+    /* overflow: hidden; */
+    min-height: 14px;
+    max-height: 100px;
+    background-color: transparent;
+    border: 0;
+    padding: 8px;
+    font-size: large;
+    color: royalblue;
+}
+
+textarea.changeInput:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}

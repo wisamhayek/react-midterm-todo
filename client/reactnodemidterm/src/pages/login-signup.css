@@ -1,0 +1,67 @@
+body{
+    background-color: #fafafa;
+    /* background-image: linear-gradient(to right, rgb(241, 124, 14) , rgb(237, 65, 12)); */
+    background-image: linear-gradient(to right, rgba(163, 150, 150, 0), rgb(101, 157, 189,0.8));
+}
+
+.loginPage{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    row-gap: 1rem;
+    margin-top: 5rem;
+    padding: 3rem;
+    text-align: center;
+    border: 2px white solid;
+    border-radius: 1rem;
+    color: black;
+}
+
+.loginForm img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.loginForm a:link, a:visited {
+    text-decoration: none;
+    color:royalblue;
+  }
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .loginPage {
+      width: 90%;
+    }
+    .loginForm {
+        width: 90%;
+        padding: 1rem;
+    }
+    .loginForm img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .loginPage {
+      width: 90%;
+    }
+    .loginForm {
+        width: 60%;
+    }
+    .loginForm img {
+        width: 80%;
+        height: 80%;
+    }
+}
