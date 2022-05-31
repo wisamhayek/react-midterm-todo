@@ -24,7 +24,7 @@ export default function AllTasks() {
     const [userTasks,setData] = useState([])
 
     function getTasks(){
-        axios.get("http://localhost:5000/api/v1/tasks/byUser",{
+        axios.get("https://firstnodedeployment.herokuapp.com/api/v1/tasks/byUser",{
             headers: {
                 ownerid: user.id
             }
@@ -39,7 +39,7 @@ export default function AllTasks() {
     // X stands for the task id (ObjID / _id: in Mongodb) when I ".map" all the tasks to elemnets
     function deleteTasks(x){
         
-        axios.delete("http://localhost:5000/api/v1/tasks/byUser",{
+        axios.delete("https://firstnodedeployment.herokuapp.com/api/v1/tasks/byUser",{
             headers: {
                 taskid: x
             }
@@ -52,7 +52,7 @@ export default function AllTasks() {
     }
 
     function updateTaskTitle(x){
-        axios.put("http://localhost:5000/api/v1/tasks/byUser",{},{
+        axios.put("https://firstnodedeployment.herokuapp.com/api/v1/tasks/byUser",{},{
             headers: {
                 taskid: x,
                 newtitle: title
@@ -66,7 +66,7 @@ export default function AllTasks() {
     }
 
     function updateTaskDesc(x){
-        axios.put("http://localhost:5000/api/v1/tasks/byUser",{},{
+        axios.put("https://firstnodedeployment.herokuapp.com/api/v1/tasks/byUser",{},{
             headers: {
                 taskid: x,
                 newdesc: title

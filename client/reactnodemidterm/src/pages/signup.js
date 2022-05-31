@@ -28,7 +28,7 @@ function Register() {
 
     const submitForm = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/api/v1/users/signup",{
+        axios.post("https://firstnodedeployment.herokuapp.com/api/v1/users/signup",{
           name,
           email,
           password
