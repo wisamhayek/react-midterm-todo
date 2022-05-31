@@ -18,7 +18,7 @@ function App() {
           <Route path={ROUTES.NOT_FOUND} element={<NotFound/>}/>
           <Route exact path={ROUTES.LOGIN} element={<Login/>}/>
           <Route exact path={ROUTES.SIGNUP} element={<Signup/>}/>
-          <Route exact path="/" element={<Dashboard/>}/>
+          <Route exact path="/react-midterm-todo" element={<Dashboard/>}/>
         </Routes>
       </Suspense>
     </BrowserRouter>

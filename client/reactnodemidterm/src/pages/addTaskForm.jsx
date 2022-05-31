@@ -14,8 +14,8 @@ export default function AddTaskForm() {
     var user = JSON.parse(localStorage.getItem('activeUser'));
 
     function addTask(){
-        axios.post("https://firstnodedeployment.herokuapp.com/api/v1/tasks",{
         // axios.post("http://localhost:5000/api/v1/tasks",{
+        axios.post("https://firstnodedeployment.herokuapp.com/api/v1/tasks",{
             title: title,
             description: description,
             user: user.id,
@@ -78,7 +78,7 @@ export default function AddTaskForm() {
         />
         <Button disabled={isInvalid} sx={{margin: "auto",width: { xs: '60%', md: '40%' }}} variant="contained" onClick={()=>{
             addTask();
-            refreshPage();
+            setTimeout(refreshPage,2000)
             }}>Add Task</Button>
     </Box>
   )

@@ -1,4 +1,4 @@
-export const DASHBOARD ='/dashboard';
-export const NOT_FOUND ='/*';
-export const LOGIN = '/login';
-export const SIGNUP = '/signup';
+export const DASHBOARD ='/react-midterm-todo/dashboard';
+export const NOT_FOUND ='/react-midterm-todo/*';
+export const LOGIN = '/react-midterm-todo/login';
+export const SIGNUP = '/react-midterm-todo/signup';
