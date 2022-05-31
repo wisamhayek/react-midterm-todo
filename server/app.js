@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const UserRoutes = require('./routes/user');
 const TaskRoutes = require('./routes/task');
 
-app.use(express.static('../client/reactnodemidterm/public'))
+app.use(express.static('../client/reactnodemidterm/build'))
 app.use(express.json());
 app.use(cors())
 
