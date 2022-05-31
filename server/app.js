@@ -12,6 +12,7 @@ const TaskRoutes = require('./routes/task');
 
 
 app.use(express.json());
+app.options('*', cors())
 app.use(cors())
 
 // Morgan as a logger to see incoming requests
